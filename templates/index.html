@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+	<!-- 
+      nav bar = 2/15
+      timetable = 6/15
+      tasks = 3.5/15
+      timer = 3.5/15
+    -->
+	<div style="width:13%;background:green;display:block;height:1080px;float:left" id="navbar">
+		<nav>
+			<img src="e.png " alt="placeholder " style="width:100%;height:20%">
+	  </nav>
+  </div>
+  <div id="agenda" style="width:40%">
+    <h3>Good Morning {{ user }},
+    <br>
+    you have {{ classes }} classes today
+    <br>
+    {{ day }}, {{ dateformat }}
+    <br>
+    {{ period }} {{ color }}
+    </h3>
+
+    <div id="timetable">
+      <div style='padding:10px;display:inline;float:left'><div class='subject' style='width: 300px;border: 10px solid {{ color1 }};padding: 10px;margin: 20px;display:block;position: static'><h3>{{ period1 }}</h3></div></div>
+      <div style='padding:10px;display:inline;float:left'><div class='subject' style='width: 300px;border: 10px solid {{ color2 }};padding: 10px;margin: 20px;display:block;position: static'><h3>{{ period2 }}</h3></div></div>
+      <div style='padding:10px;display:inline;float:left'><div class='subject' style='width: 300px;border: 10px solid {{ color3 }};padding: 10px;margin: 20px;display:block;position: static'><h3>{{ period3 }}</h3></div></div>
+      <div style='padding:10px;display:inline;float:left'><div class='subject' style='width: 300px;border: 10px solid {{ color4 }};padding: 10px;margin: 20px;display:block;position: static'><h3>{{ period4 }}</h3></div></div>
+      <div style='padding:10px;display:inline;float:left'><div class='subject' style='width: 300px;border: 10px solid {{ color5 }};padding: 10px;margin: 20px;display:block;position: static'><h3>{{ period5 }}</h3></div></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
