@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+
+<div style="width:13%;background:green;display:block;height:980px;float:left;padding:10px;border: 10px solid" id="navbar">
+		<nav>
+      <li><a href="dashboard"><p>Dashboard</p></a></li>
+      <li><a href="timetable"><p>Timetable</p></a></li>
+      <li><a href="profile"><p>Profile</p></a></li>
+      <li><a href="logout"><p>Log Out</p></a></li>
+	  </nav>
+  </div>
+  <div id="body" style="width:700px; height:1000px; padding= 20px; border: 10px solid;display:block;">
+    <h1>Profile</h1>
+    <b>Details</b> <br>
+    Username: {{ user }} <br>
+    Name: {{ fname }} {{ lname }}
+    <br>
+    <b>Change Password</b>
+    <form action="" method="POST">
+        
+    
+      <div class="form-group">
+        <label for="InputPassword">Current Password:</label>
+        <input type="password" name="cpassword" class="form-control" id="InputCurrentPassword" placeholder="Current Password">
+      </div>
+
+      <div class="form-group">
+        <label for="InputPassword">New Password:</label>
+        <input type="password" name="npassword" class="form-control" id="InputNewPassword" placeholder="New Password">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </form>
+    
+    {{ message }}
+
+</body>
+</html>

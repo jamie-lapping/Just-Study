@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<script src="script.js">
+
+	</script>
+
+	<div style="width:13%;background:green;display:block;height:980px;float:left;padding:10px;border: 10px solid" id="navbar">
+		<nav>
+      <li><a href="dashboard"><p>Dashboard</p></a></li>
+      <li><a href="timetable"><p>Timetable</p></a></li>
+      <li><a href="profile"><p>Profile</p></a></li>
+      <li><a href="logout"><p>Log Out</p></a></li>
+	  </nav>
+  </div>
+  <div id="login" style="width:700px; height:1000px; padding= 20px; border: 10px solid;display:block;">
+    <h1>Step one</h1>
+      {{ message }}
+      <form action="" method="POST">
+          
+        <div class="form-group">
+            <label for="classnum">How many classes do you do (1-12):</label>
+            <input type="number" id="classnum" name="classnum" min="1" max="12">
+        </div>
+
+        <div class="form-group">
+            <label for="classlength">How long are your classes (in minutes):</label>
+            <input type="text" id="classlength" name="classlength">
+        </div>
+
+        <div class="form-group">
+            <label for="subjectsperday">How many subjects per day (1-8):</label>
+            <input type="number" id="subjectsperday" name="subjectsperday" min="1" max="8">
+        </div>
+
+        <br>
+        <div class="form-group">
+            What is your week rotation: <br>
+            <input type="radio" id="lettered" name="rotation" value="lettered">
+            <label for="lettered">A/B</label><br>
+            <input type="radio" id="numbered" name="rotation" value="numbered">
+            <label for="numbered">1/2</label><br>
+            <input type="radio" id="single" name="rotation" value="single">
+            <label for="single">Single Week</label>
+        </div>
+
+        <div class="form-group">
+            When is your weekend: <br>
+            <input type="radio" id="sat-sun" name="weekend" value="sat-sun">
+            <label for="sat-sun">Saturday/Sunday</label><br>
+            <input type="radio" id="fri-sat" name="weekend" value="fri-sat">
+            <label for="fri-sat">Friday/Saturday</label><br>
+            <input type="radio" id="sun-only" name="weekend" value="sun-only">
+            <label for="sun-only">Sunday only</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary"">Submit</button>
+      </form>
+
+      
+
+      
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+
+<script src="script.js">
+
+</script>
+
+<body>
+	<div style="width:13%;background:green;display:block;height:980px;float:left;padding:10px;border: 10px solid" id="navbar">
+		<nav>
+      <b>Log in to see dashboard</b>
+	  </nav>
+  </div>
+
+  <div id="login" style="width:700px; height:1000px; padding= 20px; border: 10px solid;display:block;">
+
+    <h1>Create account</h1>
+    <p>Already got an account? Log in <a href="login">here</a></p>
+    <br>
+    {{ message }}
+    <br>
+    <form action="" method="POST">
+        
+    
+    <div class="form-group">
+        <label for="username">Username:</label>
+        <input name="username" class="form-control" id="inputUsername" placeholder="Enter Username">
+    </div>
+
+    <div class="form-group">
+        <label for="fname">First name:</label>
+        <input name="fname" class="form-control" id="inputFirstName" placeholder="Enter First name">
+    </div>
+
+    <div class="form-group">
+        <label for="lname">Family name:</label>
+        <input name="lname" class="form-control" id="inputLastName" placeholder="Enter Family name">
+    </div>
+
+    <div class="form-group">
+      <label for="InputPassword">Password:</label>
+      <input type="password" name="password1" class="form-control" id="InputPassword" placeholder="Password">
+    </div>
+
+    <div class="form-group">
+      <label for="InputPassword2">Repeat Password:</label>
+      <input type="password" name="password2" class="form-control" id="InputPassword2" placeholder="Repeat Password">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
+  
+
+  
+
+  </div>
+
+</body>
+</html>
